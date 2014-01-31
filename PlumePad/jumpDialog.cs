@@ -10,7 +10,7 @@ namespace PlumePad
     {
         //処理対象となる TextBox のインスタンスを保持
         private TextBox _textBox;
-      
+
         public jumpDialog()
         {
             InitializeComponent();
@@ -45,7 +45,7 @@ namespace PlumePad
             int jumpPoint = int.Parse(lineNumTextBox.Text) - 1;
             int lineCount = lineArray.Length;
             int lastLength = 0;
-            
+
             if (lineCount < jumpPoint) {
                 MessageBox.Show(MSG_INVALID_LINE, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
